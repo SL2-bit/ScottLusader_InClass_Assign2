@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABCs</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <p class="header1">
+        Welcome to the Interactive ABCs of CSS Technology learning Website
+      </p>
+      <p class="header2">
+        Click on the buttons below to reveal and learn the css technology
+        features of the corresponding letters
+      </p>
+    </div>
+    <div class="display">
+      <div class="column" id="columnA">
+        <img src="./img/css-letter-a.png" alt="This is picture A" class="A" />
+        <button class="hidebtn" onclick="hideA()">Hide Result</button>
+      </div>
+      <div class="column" id="columnB">
+        <img src="./img/css-letter-b.png" alt="This is picture B" class="B" />
+        <button class="hidebtn" onclick="hideB()">Hide Result</button>
+      </div>
+      <div class="column" id="columnC">
+        <img src="./img/css-letter-c.png" alt="This is picture C" class="C" />
+        <button class="hidebtn" onclick="hideC()">Hide Result</button>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="revealbtn" onclick="revealA()">A</button>
+      <button class="revealbtn" onclick="revealB()">B</button>
+      <button class="revealbtn" onclick="revealC()">C</button>
+    </div>
+    <script>
+      function revealA() {
+        var x = document.getElementById("columnA");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+      function hideA() {
+        var x = document.getElementById("columnA");
+        if (x.style.visibility === "visible") {
+          x.style.visibility = "hidden";
+        }
+      }
+
+      function revealB() {
+        var y = document.getElementById("columnB");
+        if (y.style.visibility === "hidden") {
+          y.style.visibility = "visible";
+        } else {
+          y.style.visibility = "hidden";
+        }
+      }
+      function hideB() {
+        var y = document.getElementById("columnB");
+        if (y.style.visibility === "visible") {
+          y.style.visibility = "hidden";
+        }
+      }
+
+      function revealC() {
+        var z = document.getElementById("columnC");
+        if (z.style.visibility === "hidden") {
+          z.style.visibility = "visible";
+        } else {
+          z.style.visibility = "hidden";
+        }
+      }
+      function hideC() {
+        var z = document.getElementById("columnC");
+        if (z.style.visibility === "visible") {
+          z.style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+</html>
